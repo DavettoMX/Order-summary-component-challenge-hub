@@ -21,15 +21,15 @@ Users should be able to:
 ### Screenshot
 
 #### Web View
-![](img/capturas/WebView.jpg)
+![](./img/capturas/WebView.jpg)
 
 #### Mobile View ( 375px )
-![](img/capturas/MobileView.jpg)
+![](./img/capturas/MobileView.jpg)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/DavettoMX/Order-summary-component-challenge-hub)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://davettomx.github.io/Order-summary-component-challenge-hub/)
 
 ### Built with
 
