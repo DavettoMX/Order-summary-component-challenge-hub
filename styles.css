@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    /* PRIMARY COLORS */
+    --Pale-Blue: hsl(225, 100%, 94%);
+    --Bright-Blue: hsl(245, 75%, 52%);
+    /* NEUTRAL COLORS */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    /* BORDER RADIUS */
+    --Border-Primary: 15px; 
+    --Border-Secondary: 15px 15px 0 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::after {
+    content: "";
+    background-image: url(img/pattern-background-desktop.svg);
+    background-color: rgb(199, 214, 250);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+h2 {
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+p {
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+    font-size: 16px;
+}
+
+.container {
+    position: absolute;
+    width: 30%; height: 85vh;
+    background-color: #FFF;
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.527);
+    border-radius: var(--Border-Primary);
+    text-align: center;
+}
+
+.illustration {
+    width: 100%;
+    height: 10%;
+    border-radius: var(--Border-Secondary);
+}
+
+/* SUMMARY */
+.summary {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 50px;
+}
+
+.summary h2 {
+    margin: 12px 0;
+}
+
+.summary p {
+    margin: 15px 0;
+}
+
+/* PLAN */
+.annual__plan {
+    position: relative;
+    margin: 5px 50px;
+    padding: 12px;
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    background: var(--Very-pale-blue);
+    border-radius: 10px;
+}
+
+.annual__plan img {
+    width: 35px; height: 35px;
+    margin: 0 10px;
+}
+
+.change__option {
+    font-weight: 700;
+    color: var(--Bright-Blue);
+    padding: 0 20px;
+    font-size: 14px;
+    margin: 0 20px 0 70px;
+}
+
+.change__option:hover {
+    color: hsl(216, 98%, 49%);
+}
+
+/* BUTTONS */
+
+.btn {
+    margin: 35px 0;
+}
+
+.check__btn {
+    text-align: center;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    background: var(--Bright-Blue);
+    color: var(--Very-pale-blue);
+    padding: 10px;
+    margin: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 7px 9px 1px var(--Pale-Blue);
+    font-weight: 900;
+}
+
+.check__btn:hover{
+    background: hsl(246, 97%, 75%);
+}
+
+.cancel__btn {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    color: #8d8d8d;
+}
+
+.cancel__btn:hover {
+    color: var(--Dark-blue);
+}
+
+/* MOBILE DEVICES VIEW */
+@media all and (max-width: 375px) {
+    body::after {
+        background-image: url(img/pattern-background-mobile.svg);
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 70%; height: 70vh;
+    }
+
+    .summary {
+        width: 100%;
+        padding: 5px 25px;
+        text-align: center;
+    }
+
+    .summary h2 {
+        font-size: 20px;
+        font-weight: 900;
+        margin: 20px 0;
+    }
+
+    .summary p {
+        line-height: 22px;
+        margin: 12px 0;
+    }
+
+    .annual__plan {
+        position: relative;
+        margin: 5px 25px;
+        padding: 15px 0;
+    }
+
+    .annual__plan img {
+        width: 27px; height: 27px;
+        margin: 0 10px;
+    }
+
+    .annual__info{
+        position: absolute;
+        margin: 0 0 0 50px;
+    }
+
+    .annual__info .price {
+        font-size: 12px;
+    }
+
+    .annual__info .header{
+        font-size: 12px;
+    }
+
+    .change__option {
+        font-size: 10px;
+        margin: 0 0 0 85px;
+    }
+
+    .check__btn {
+        font-size: 14px;
+        font-weight: 900;
+        padding: 10px;
+        margin: 10px 25px;
+    }
+
+    .cancel__btn {
+        margin: 16px 0;
+        font-size: 14px;
+    }
+}
