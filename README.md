@@ -21,10 +21,10 @@ Users should be able to:
 ### Screenshot
 
 #### Web View
-![](./img/Capturas/WebView.jpg)
+![](/img/Capturas/WebView.png)
 
 #### Mobile View ( 375px )
-![](./img/Capturas/MobileView.jpg)
+![](/img/Capturas/WebView.png)
 
 ### Links
 
