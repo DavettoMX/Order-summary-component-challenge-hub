@@ -82,6 +82,7 @@ p {
 
 /* PLAN */
 .annual__plan {
+    display: inline-flex;
     position: relative;
     margin: 5px 50px;
     padding: 12px;
@@ -102,7 +103,7 @@ p {
     color: var(--Bright-Blue);
     padding: 0 20px;
     font-size: 14px;
-    margin: 0 20px 0 70px;
+    margin: 0 20px 0 50px;
 }
 
 .change__option:hover {
