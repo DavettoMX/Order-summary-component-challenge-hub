@@ -24,7 +24,7 @@ Users should be able to:
 ![](/img/Capturas/WebView.png)
 
 #### Mobile View ( 375px )
-![](/img/Capturas/WebView.png)
+![](/img/Capturas/MobileView.png)
 
 ### Links
 
